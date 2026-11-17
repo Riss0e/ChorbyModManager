@@ -1,0 +1,65 @@
+﻿<Window x:Class="ChorbyModManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChorbyModManager"
+        mc:Ignorable="d"
+        Title="Chorby Mod Manager" 
+        Height="450" 
+        Width="800"
+        MinHeight="100"
+        MinWidth="600"
+        WindowState="Maximized">
+    <Border Background="#262626">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                <Border CornerRadius="10" Background="#3f3f3f" HorizontalAlignment="Left" Margin="8" Padding="10,5">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Assets/Images/ChorbyTransparent.png" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock Text="Chorby Mod&#x0a;Manager" VerticalAlignment="Center" FontSize="18" Foreground="White" FontFamily="{DynamicResource LogoFont}" />
+                    </StackPanel>
+                </Border>
+
+                <UniformGrid Rows="1" Margin="6">
+                    <RadioButton Content="Library" Style="{StaticResource NavButtonTheme}" IsChecked="True"/>
+                    <RadioButton Content="Browser" Style="{StaticResource NavButtonTheme}"/>
+                    <RadioButton Content="Options" Style="{StaticResource NavButtonTheme}"/>
+                    <RadioButton Content="About" Style="{StaticResource NavButtonTheme}"/>
+                </UniformGrid>
+            </StackPanel>
+
+            <Border Grid.Row="0" CornerRadius="10" Margin="8" Padding="16,2" Background="#00B107" HorizontalAlignment="Right">
+                <Button Background="Transparent" BorderThickness="0">
+                    <TextBlock Text="Launch Game&#x0a;(# Enabled)" TextAlignment="Center" FontSize="17" FontFamily="{DynamicResource LogoFont}"/>
+                </Button>
+            </Border>
+
+            <Border Background="Gray" Grid.Row="1">
+                <StackPanel Grid.Row="1">
+                    <TextBlock>This is where the view of the page is</TextBlock>
+                    <TextBlock>or atleast where it will be</TextBlock>
+                    <TextBlock>depending on the button that is active this shows a different viewport</TextBlock>
+                    <TextBlock>One for each with the last one being mainly credits and why this exists</TextBlock>
+                    <TextBlock>Library always is the default page open, and browser only starts fetching once it's opened</TextBlock>
+                    <TextBlock>Library shows downloaded mods, enabled, disabled, pinned and so on.</TextBlock>
+                    <TextBlock>Browser is where you get mods</TextBlock>
+                    <TextBlock>Options contains some settings, maybe even customizing the colors would be fun for an extra</TextBlock>
+                    <TextBlock>But mainly for setting the game path (which also happens automatically or can be done automatically) and stuff</TextBlock>
+                    <TextBlock>About i already explained</TextBlock>
+                    <TextBlock>I have no idea why i am noting this here I am uploading this to github now</TextBlock>
+                    <TextBlock/>
+                    <TextBlock>Too lazy to properly add this, but this software is made by Rissoe, if you feel like forking this or using this in any way, credit me with a link to my github</TextBlock>
+                    <TextBlock>this is made for the game Content Warning by Landfall, yes yes</TextBlock>
+                    <TextBlock/>
+                    <TextBlock>I'm adding way too many of these lines, it's also getting very late, goodnight</TextBlock>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Border>
+</Window>
