@@ -14,31 +14,38 @@
     <Border Background="#262626">
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="100"/>
+                <RowDefinition Height="80"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
-                <Border CornerRadius="10" Background="#3f3f3f" HorizontalAlignment="Left" Margin="8" Padding="10,5">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="/Assets/Images/ChorbyTransparent.png" HorizontalAlignment="Left" Margin="5"/>
-                        <TextBlock Text="Chorby Mod&#x0a;Manager" VerticalAlignment="Center" FontSize="18" Foreground="White" FontFamily="{DynamicResource LogoFont}" />
-                    </StackPanel>
-                </Border>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="160"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
 
-                <UniformGrid Rows="1" Margin="6">
-                    <RadioButton Content="Library" Style="{StaticResource NavButtonTheme}" IsChecked="True"/>
-                    <RadioButton Content="Browser" Style="{StaticResource NavButtonTheme}"/>
-                    <RadioButton Content="Options" Style="{StaticResource NavButtonTheme}"/>
-                    <RadioButton Content="About" Style="{StaticResource NavButtonTheme}"/>
-                </UniformGrid>
-            </StackPanel>
-
-            <Border Grid.Row="0" CornerRadius="10" Margin="8" Padding="16,2" Background="#00B107" HorizontalAlignment="Right">
-                <Button Background="Transparent" BorderThickness="0">
-                    <TextBlock Text="Launch Game&#x0a;(# Enabled)" TextAlignment="Center" FontSize="17" FontFamily="{DynamicResource LogoFont}"/>
-                </Button>
+            <Border CornerRadius="10" Background="#3f3f3f" HorizontalAlignment="Left" Margin="8,8,0,8" Padding="10,5">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Assets/Images/ChorbyTransparent.png" HorizontalAlignment="Left" Margin="5"/>
+                    <TextBlock Text="Chorby Mod&#x0a;Manager" VerticalAlignment="Center" FontSize="18" Foreground="White" FontFamily="{DynamicResource LogoFont}" />
+                </StackPanel>
             </Border>
+
+            <UniformGrid Rows="1" Grid.Column="1">
+
+                <RadioButton Content="Library" Style="{StaticResource NavButtonTheme}" IsChecked="True" Checked="RadioButton_Checked_1"/>
+                <RadioButton Content="Browser" Style="{StaticResource NavButtonTheme}" Checked="RadioButton_Checked"/>
+                <RadioButton Content="Options" Style="{StaticResource NavButtonTheme}"/>
+                <RadioButton Content="About" Style="{StaticResource NavButtonTheme}"/>
+
+                <Border Grid.Row="0" CornerRadius="10" Margin="8" Padding="16,2" Background="#00B107" HorizontalAlignment="Right">
+                    <Button Background="Transparent" BorderThickness="0">
+                        <TextBlock Text="Launch Game&#x0a;(# Enabled)" TextAlignment="Center" FontSize="17" FontFamily="{DynamicResource LogoFont}"/>
+                    </Button>
+                </Border>
+            </UniformGrid>
+
+
+            <ContentControl Grid.Row="1"/>
 
             <Border Background="Gray" Grid.Row="1">
                 <StackPanel Grid.Row="1">
