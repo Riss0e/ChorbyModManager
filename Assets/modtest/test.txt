@@ -1,1 +1,0 @@
-This is a temp file (these folders will contain a mod (.dll), icon.png and banner.png)
