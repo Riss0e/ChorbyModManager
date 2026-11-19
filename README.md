@@ -13,5 +13,5 @@ If you made one of these mods and you for some reason don't want your mod on thi
 
 ## Credits
 [Content Warning](https://icons8.com/icon/aUBfg9EKSWdt/filter) made by [Landfall](https://landfall.se/)  
-[Filter](https://icons8.com/icon/aUBfg9EKSWdt/filter) icon by [Icons8](https://icons8.com)  
+[Icons](https://icons8.com/icon/aUBfg9EKSWdt/filter) made by [Icons8](https://icons8.com)  
 Every mod creator that's included in this project <3
