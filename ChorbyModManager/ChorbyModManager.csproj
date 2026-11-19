@@ -56,9 +56,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Views\Model\LibraryViewModel.cs" />
-    <Compile Include="Views\Model\MainViewModel.cs" />
-    <Compile Include="Views\View\LibraryView.xaml.cs">
+    <Compile Include="ViewModels\Model\LibraryViewModel.cs" />
+    <Compile Include="ViewModels\Model\MainViewModel.cs" />
+    <Compile Include="ViewModels\View\LibraryView.xaml.cs">
       <DependentUpon>LibraryView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
@@ -77,11 +77,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Themes\SearchBoxTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Themes\NavButtonTheme.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\View\LibraryView.xaml">
+    <Page Include="ViewModels\View\LibraryView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -117,13 +121,27 @@
   <ItemGroup>
     <Folder Include="Cache\Mods\" />
     <Folder Include="Cache\Pinned\" />
-    <Folder Include="Cache\Temp\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\Images\Chorby.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\Images\ChorbyTransparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Images\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Images\sort_a.png" />
+    <Resource Include="Assets\Images\sort_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Images\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cache\Temp\mod.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,14 +1,13 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-
     <Style TargetType="{x:Type ToggleButton}" x:Key="NavButtonTheme">
         <Style.Setters>
             <Setter Property="Opacity" Value="0.5"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="ToggleButton">
-                        <Border Background="#FDD700" CornerRadius="10" Margin="4,12">
-                            <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center" VerticalAlignment="Center" Padding="16" FontSize="24" Foreground="Black" FontFamily="{DynamicResource LogoFont}"/>
+                        <Border Background="#FDD700" CornerRadius="10" Margin="8,12">
+                            <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="16" FontSize="28" Foreground="Black" FontFamily="{DynamicResource LogoFont}"/>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>

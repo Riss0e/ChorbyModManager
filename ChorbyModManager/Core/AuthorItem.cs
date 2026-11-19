@@ -7,12 +7,11 @@ using System.Windows.Media;
 
 namespace ChorbyModManager.Core
 {
-    internal class AuthorItem
+    public class AuthorItem
     {
-        internal int authorID;
-        internal string name;
-        internal string steamID;
-        internal string githubName;
-        internal ImageSource icon;
+        public string authorTag; // also what the icon is called in Temp ({user}.png)
+        public string name;
+        public string steamID;
+        public string githubID;
     }
 }

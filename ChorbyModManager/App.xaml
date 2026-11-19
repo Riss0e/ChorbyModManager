@@ -7,15 +7,16 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
-            <FontFamily x:Key="LogoFont">/Assets/Fonts/#Bebas Neue Regular</FontFamily>
-
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Themes/NavButtonTheme.xaml"/>
+                <ResourceDictionary Source="/Themes/SearchBoxTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
 
-        <DataTemplate DataType="{x:Type viewModel:LibraryViewModel}"> <!-- what -->
-            <view:LibraryView/>
-        </DataTemplate>
+            <FontFamily x:Key="LogoFont">/Assets/Fonts/#Bebas Neue Regular</FontFamily>
+
+            <DataTemplate DataType="{x:Type viewModel:LibraryViewModel}">
+                <view:LibraryView/>
+            </DataTemplate>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -4,69 +4,57 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChorbyModManager"
+        xmlns:viewModel="clr-namespace:ChorbyModManager.Views.Model"
         mc:Ignorable="d"
         Title="Chorby Mod Manager" 
-        Height="450" 
+        Height="600" 
         Width="800"
-        MinHeight="100"
+        MinHeight="200"
         MinWidth="600"
-        WindowState="Maximized">
+        WindowState="Maximized"
+        PreviewMouseDown="ClearFocus">
+
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
+    
     <Border Background="#262626">
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="80"/>
+                <RowDefinition Height="100"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="160"/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="185"/>
+                <ColumnDefinition Width="70*"/>
+                <ColumnDefinition Width="30*"/>
             </Grid.ColumnDefinitions>
 
-            <Border CornerRadius="10" Background="#3f3f3f" HorizontalAlignment="Left" Margin="8,8,0,8" Padding="10,5">
+            <Border CornerRadius="10" Background="#3F3F3F" HorizontalAlignment="Left" Margin="8" Padding="10,5">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="/Assets/Images/ChorbyTransparent.png" HorizontalAlignment="Left" Margin="5"/>
-                    <TextBlock Text="Chorby Mod&#x0a;Manager" VerticalAlignment="Center" FontSize="18" Foreground="White" FontFamily="{DynamicResource LogoFont}" />
+                    <TextBlock Text="Chorby Mod&#x0a;Manager" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="White" FontFamily="{DynamicResource LogoFont}" />
                 </StackPanel>
             </Border>
 
             <UniformGrid Rows="1" Grid.Column="1">
-
-                <RadioButton Content="Library" Style="{StaticResource NavButtonTheme}" IsChecked="True" Checked="RadioButton_Checked_1"/>
-                <RadioButton Content="Browser" Style="{StaticResource NavButtonTheme}" Checked="RadioButton_Checked"/>
+                <RadioButton Content="Library" Style="{StaticResource NavButtonTheme}" IsChecked="True" Checked="RadioButton_Checked_2"/>
+                <RadioButton Content="Browser" Style="{StaticResource NavButtonTheme}"/>
                 <RadioButton Content="Options" Style="{StaticResource NavButtonTheme}"/>
                 <RadioButton Content="About" Style="{StaticResource NavButtonTheme}"/>
-
-                <Border Grid.Row="0" CornerRadius="10" Margin="8" Padding="16,2" Background="#00B107" HorizontalAlignment="Right">
-                    <Button Background="Transparent" BorderThickness="0">
-                        <TextBlock Text="Launch Game&#x0a;(# Enabled)" TextAlignment="Center" FontSize="17" FontFamily="{DynamicResource LogoFont}"/>
-                    </Button>
-                </Border>
             </UniformGrid>
 
-
-            <ContentControl Grid.Row="1"/>
-
-            <Border Background="Gray" Grid.Row="1">
-                <StackPanel Grid.Row="1">
-                    <TextBlock>This is where the view of the page is</TextBlock>
-                    <TextBlock>or atleast where it will be</TextBlock>
-                    <TextBlock>depending on the button that is active this shows a different viewport</TextBlock>
-                    <TextBlock>One for each with the last one being mainly credits and why this exists</TextBlock>
-                    <TextBlock>Library always is the default page open, and browser only starts fetching once it's opened</TextBlock>
-                    <TextBlock>Library shows downloaded mods, enabled, disabled, pinned and so on.</TextBlock>
-                    <TextBlock>Browser is where you get mods</TextBlock>
-                    <TextBlock>Options contains some settings, maybe even customizing the colors would be fun for an extra</TextBlock>
-                    <TextBlock>But mainly for setting the game path (which also happens automatically or can be done automatically) and stuff</TextBlock>
-                    <TextBlock>About i already explained</TextBlock>
-                    <TextBlock>I have no idea why i am noting this here I am uploading this to github now</TextBlock>
-                    <TextBlock/>
-                    <TextBlock>Too lazy to properly add this, but this software is made by Rissoe, if you feel like forking this or using this in any way, credit me with a link to my github</TextBlock>
-                    <TextBlock>this is made for the game Content Warning by Landfall, yes yes</TextBlock>
-                    <TextBlock/>
-                    <TextBlock>I'm adding way too many of these lines, it's also getting very late, goodnight</TextBlock>
-                </StackPanel>
+            <Border Grid.Column="2" CornerRadius="10" Margin="8" Background="#00B107" HorizontalAlignment="Right">
+                <Button Background="Transparent" BorderThickness="0">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image Source="/Assets/Images/start.png" Margin="12,15" Height="36" VerticalAlignment="Center"/>
+                        <TextBlock Text="Start Game&#x0a;0 Mods" TextAlignment="Center" Margin="12,0" VerticalAlignment="Center" FontSize="24" FontFamily="{DynamicResource LogoFont}"/>
+                    </StackPanel>
+                </Button>
             </Border>
+
+            <ContentControl Content="{Binding CurrentView}" Grid.Row="1" Grid.ColumnSpan="3" Margin="12"/>
         </Grid>
     </Border>
 </Window>

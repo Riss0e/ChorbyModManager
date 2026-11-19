@@ -2,13 +2,18 @@
 
 namespace ChorbyModManager.Core
 {
-    internal class ModItem
+    public class ModItem : ObservableObject
     {
-        internal string resourceTag;
-        internal string title;
-        internal AuthorItem author;
-        internal ImageSource icon;
-        internal ImageSource banner;
-        internal int authorID; // Authors get stored internally with their icon incuded, then when a mod fetches it uses this field and links the author
+        public string resourceTag; // used for icon/banner getting from Temp/Pinned (both stored in a folder with the name of this string as icon.png and banner.png) mod too, but as a .dll in Mods
+        public string title;
+        public string version;
+        public string authorTag;
+        public string description;
+
+        public AuthorItem author;
+
+        public RelayCommand ToggleCommand { get; set; }
+        public RelayCommand PinCommand { get; set; }
+        public RelayCommand RemoveCommand { get; set; }
     }
 }

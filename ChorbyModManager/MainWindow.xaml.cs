@@ -34,5 +34,18 @@ namespace ChorbyModManager
         {
 
         }
+
+        private void RadioButton_Checked_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        public void ClearFocus(object sender, MouseButtonEventArgs e)
+        {
+            if (e.OriginalSource is DependencyObject obj && !(obj is TextBox))
+            {
+                Keyboard.ClearFocus();
+            }
+        }
     }
 }
