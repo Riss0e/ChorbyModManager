@@ -139,6 +139,7 @@
     <Resource Include="Assets\Images\start.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\mod.dll" />
     <Content Include="Cache\Temp\mod.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
