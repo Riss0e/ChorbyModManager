@@ -1,0 +1,46 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="{x:Type ContentControl}" x:Key="LibraryModTheme">
+        <Style.Setters>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ContentControl">
+                        <Border Background="#7A7A7A" CornerRadius="8" Margin="8">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="70*"/>
+                                    <RowDefinition Height="8*"/>
+                                    <RowDefinition Height="8*"/>
+                                    <RowDefinition Height="14*"/>
+                                </Grid.RowDefinitions>
+                                
+                                <Image Source="{TemplateBinding Content}"/>
+                                <TextBlock Text="{TemplateBinding ContentStringFormat}" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="16" FontSize="28" Foreground="#999999"/>
+                                <TextBlock Text="{TemplateBinding DataContext}" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="16" FontSize="28" Foreground="#565656"/>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50*"/>
+                                        <ColumnDefinition Width="30*"/>
+                                        <ColumnDefinition Width="20*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Border CornerRadius="8" Background="White">
+                                        <TextBlock Text="Ena/Dis"></TextBlock>
+                                    </Border>
+
+                                    <Border Grid.Column="1" CornerRadius="8" Background="White">
+                                        <TextBlock Text="Pin"></TextBlock>
+                                    </Border>
+
+                                    <Border Grid.Column="2" CornerRadius="8" Background="White">
+                                        <TextBlock Text="Del"></TextBlock>
+                                    </Border>
+                                </Grid>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style.Setters>
+    </Style>
+</ResourceDictionary>

@@ -7,7 +7,7 @@
                 <Setter.Value>
                     <ControlTemplate TargetType="ToggleButton">
                         <Border Background="#FDD700" CornerRadius="10" Margin="8,12">
-                            <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="16" FontSize="28" Foreground="Black" FontFamily="{DynamicResource LogoFont}"/>
+                            <TextBlock Text="{TemplateBinding Content}" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="16" FontSize="28" FontFamily="{DynamicResource LogoFont}"/>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>

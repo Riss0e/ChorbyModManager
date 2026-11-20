@@ -43,8 +43,8 @@
             <TextBlock Foreground="#BBBBBB" Text="0/0 Mods Active" FontSize="16" Grid.Row="0" Grid.Column="4" VerticalAlignment="Center" Margin="12"/>
         </Grid>
 
-        <UniformGrid Columns="5">
-            
+        <UniformGrid Columns="5" Grid.Row="1">
+            <ContentControl ContentStringFormat="Title" DataContext="Author" Content="/Assets/Images/Chorby.png" Style="{StaticResource LibraryModTheme}"/>
         </UniformGrid>
         <!-- downloaded items shown here with their info and such (buttons to enable/disable/pin/delete, icon, title, author, etc..) -->
         <!-- pinned mods also store the icon (not banner) to save on connection when reloading the manager and see the icon even while offline -->
