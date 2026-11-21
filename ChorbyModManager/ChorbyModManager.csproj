@@ -87,6 +87,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Core\DescriptionParser.cs" />
     <Compile Include="ViewModels\Model\LibraryViewModel.cs" />
     <Compile Include="ViewModels\Model\MainViewModel.cs" />
     <Compile Include="ViewModels\View\LibraryView.xaml.cs">
@@ -144,6 +145,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <Resource Include="Assets\Fonts\BebasNeue-Regular.ttf" />
+    <None Include="Assets\ModTags.json" />
     <None Include="Cache\Pins.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -1,10 +1,10 @@
 <Solution>
-  <Folder Name="/Source (does not exist)/" />
-  <Folder Name="/Source (does not exist)/Authors/">
+  <Folder Name="/Source removelater/" />
+  <Folder Name="/Source removelater/Authors/">
     <File Path="../../../../Downloads/rissoe.json" />
   </Folder>
-  <Folder Name="/Source (does not exist)/Mods/" />
-  <Folder Name="/Source (does not exist)/Mods/0/">
+  <Folder Name="/Source removelater/Mods/" />
+  <Folder Name="/Source removelater/Mods/0/">
     <File Path="../../../../Downloads/wackierwarning/banner.png" />
     <File Path="../../../../Downloads/wackierwarning/data.json" />
     <File Path="../../../../Downloads/wackierwarning/icon.png" />

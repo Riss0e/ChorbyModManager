@@ -10,6 +10,7 @@ namespace ChorbyModManager.Core
         public string title;
         public string version;
         public string author;
+        public string authorID;
         public string description;
     }
 }
