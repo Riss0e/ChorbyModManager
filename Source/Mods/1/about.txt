@@ -1,0 +1,19 @@
+# Virality
+
+b# A better multiplayer mod for Content Warning
+
+## Features
+- Bigger lobby sizes (configurable limit)
+- Late joining (configurable on/off)
+
+
+## Notes
+- Required by all players to work properly!
+- Supports all vanilla player features (i.e. showing up in video comments, hospital bills, etc...)
+- Only 4 players need to sleep to progress the day
+- Having voice problems? Toggle the "Voice Fix" option in the mod tab on or off.
+
+## Credits
+- Day -- Bed patches, support, testing
+- sovenance -- Mod name idea
+- computery -- Self Sufficient, which got us through the Photon lobby limit days

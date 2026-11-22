@@ -1,0 +1,3 @@
+Press C (Rebindable in Options -> Mods) to zoom!
+
+Scroll to zoom in even more!

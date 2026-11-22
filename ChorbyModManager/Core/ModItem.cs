@@ -2,7 +2,6 @@
 
 namespace ChorbyModManager.Core
 {
-    [Serializable]
     public class ModItem
     {
         public int modID;

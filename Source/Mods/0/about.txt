@@ -1,0 +1,29 @@
+# Wacky Warning but with replayability!
+
+b# Did you think Wacky Warning wasn't WACKY enough? Well you're in luck! Introducing the EVEN WACKIER version!
+
+Just like last time, getting to day 4 is the goal!
+
+u# The cycle never ends
+
+### Also yes the Motion Sickess setting is still there don't worry, now with some more settings too so surely check those out :]
+
+Features (MOD IS BEST EXPERIENCED BLIND):
+- Wacky Warning's core concept
+- Modes (Currently: 32.5) (one mode is buggy but "playable", one is not added yet)
+- Events (Currently: 1)
+- Entities (Currently: 2)
+- Mode Specific Entities (Currently: 9)
+- An Endless mode to test how far you can go
+- Notifications to show when you unlock or escape a mode
+- A LOT of bug fixes for both the original mod and game (including ones like the surface house door randomly starting opened, or reviving sending you to the void, and for the original mod, some orbs spawning in terrain)
+- New tracks (Credits in pinned discussion)
+- Few QoL and balancing changes (Defibs have one use, Useful planks on harbour/ship are back and always there)
+- Unlockable and then optional Speedrun Timer
+
+Lore / Story:
+You (and maybe some friends) are stuck in an endless cycle, the only way out is to find enough light down there. But just be careful, there is a reason it's called the cycle, and I don't think they would like you getting out.
+
+# PLAY THIS MOD WITHOUT ANY OTHER CONTENT ADDING MODS, STUFF WILL BREAK THEN!
+# Also adding this to prevent confusion, you need to use a fresh save to choose the mode (deleted / empty), saves without a mode selected will be inaccessible to prevent both vanilla saves from being corrupted by the modded data potentially and the mod not liking it when you have no mode selected.
+# EVERYONE IN THE LOBBY NEEDS TO DOWNLOAD TO THE MOD FOR IT TO WORK! THIS IS NOT CLIENT SIDE!

@@ -1,18 +1,3 @@
 <Solution>
-  <Folder Name="/Source removelater/" />
-  <Folder Name="/Source removelater/Authors/">
-    <File Path="../../../../Downloads/rissoe.json" />
-  </Folder>
-  <Folder Name="/Source removelater/Mods/" />
-  <Folder Name="/Source removelater/Mods/0/">
-    <File Path="../../../../Downloads/wackierwarning/banner.png" />
-    <File Path="../../../../Downloads/wackierwarning/data.json" />
-    <File Path="../../../../Downloads/wackierwarning/icon.png" />
-    <File Path="../../../../Downloads/wackierwarning/mod.dll" />
-    <Properties Name="FolderGlobals">
-      <Property Name="C_5_4Users_4Ruben_4Downloads_4wackierwarning_4data_1json__JsonSchema" />
-      <Property Name="C_5_4Users_4Ruben_4Downloads_4wackierwarning_4info_1json__JsonSchema" />
-    </Properties>
-  </Folder>
   <Project Path="ChorbyModManager/ChorbyModManager.csproj" Id="740aa395-4a62-41c7-bb4a-301c71031905" />
 </Solution>

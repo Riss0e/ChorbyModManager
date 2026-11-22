@@ -1,0 +1,12 @@
+# The OFFICIAL reworked Bell Cam!
+
+- Better Frame
+- Smoother camera
+- NO MORE WEIRD CAMERA SHENANIGANS!
+- A cool button to switch players with!
+- Just don't use it with the old one stuff will break
+- A lot of bug fixes and more mod compatibility!
+
+Ty to dFuZer for helping with getting the frame model!
+
+Yes this is client side

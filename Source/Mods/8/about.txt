@@ -1,0 +1,3 @@
+b# (Original description missing)
+
+Skips the intro animation automatically.

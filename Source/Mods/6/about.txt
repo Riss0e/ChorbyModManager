@@ -1,0 +1,5 @@
+Press E (rebindable) to climb onto someones back
+
+There is also a setting to ride monsters!
+
+Fully client side!

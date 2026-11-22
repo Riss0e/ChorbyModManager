@@ -1,8 +1,8 @@
 {
   "modID": 0,
-  "resourceTag": "wackier-warning",
+  "resourceTag": "wackierwarning",
   "title": "Wackier Warning",
   "version": "0.9.4",
-  "author": "rissoe",
-  "description": "Wacky Warning but with replayability!&#x0a;&#x0a;Did you think Wacky Warning wasn't WACKY enough? Well you're in luck! Introducing the EVEN WACKIER version!&#x0a;&#x0a;Just like last time, getting to day 4 is the goal!&#x0a;&#x0a;Also yes the Motion Sickess setting is still there don't worry, now with some more settings too so surely check those out :]&#x0a;&#x0a;Features (MOD IS BEST EXPERIENCED BLIND):&#x0a;- Wacky Warning's core concept&#x0a;- Modes (Currently: 32.5) (one mode is buggy but 'playable', one is not added yet)&#x0a;- Events (Currently: 1)&#x0a;- Entities (Currently: 2)&#x0a;- Mode Specific Entities (Currently: 9)&#x0a;- An Endless mode to test how far you can go&#x0a;- Notifications to show when you unlock or escape a mode&#x0a;- A LOT of bug fixes for both the original mod and game (including ones like the surface house door randomly starting opened, or reviving sending you to the void, and for the original mod, some orbs spawning in terrain)&#x0a;- New tracks (Credits in pinned discussion)&#x0a;- Few QoL and balancing changes (Defibs have one use, Useful planks on harbour/ship are back and always there)&#x0a;- Unlockable and then optional Speedrun Timer&#x0a;&#x0a;Lore/Story:&#x0a;You (and maybe some friends) are stuck in an endless cycle, the only way out is to find enough light down there. But just be careful, there is a reason it's called the cycle, and I don't think they would like you getting out.&#x0a;&#x0a;PLAY THIS MOD WITHOUT ANY OTHER CONTENT ADDING MODS, STUFF WILL BREAK THEN!&#x0a;Also adding this to prevent confusion, you need to use a fresh save to choose the mode (deleted / empty), saves without a mode selected will be inaccessible to prevent both vanilla saves from being corrupted by the modded data potentially and the mod not liking it when you have no mode selected.&#x0a;EVERYONE IN THE LOBBY NEEDS TO DOWNLOAD TO THE MOD FOR IT TO WORK! THIS IS NOT CLIENT SIDE!"
+  "author": "Rissoe",
+  "authorID": "rissoe"
 }

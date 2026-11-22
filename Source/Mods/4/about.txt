@@ -1,0 +1,4 @@
+## A simple mod which is a standalone version of a class from my other mod (DiverClasses) that adds a third person camera!
+
+Default key is F, rebindable in the settings
+Front Camera key is G, also rebindable
