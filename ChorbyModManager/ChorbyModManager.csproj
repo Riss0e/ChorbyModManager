@@ -88,8 +88,23 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Core\DescriptionParser.cs" />
+    <Compile Include="Core\Fetcher.cs" />
+    <Compile Include="Core\Helpers.cs" />
+    <Compile Include="Core\Mods\ModItem.cs" />
+    <Compile Include="ViewModels\Model\AboutViewModel.cs" />
+    <Compile Include="ViewModels\Model\OptionsViewModel.cs" />
     <Compile Include="ViewModels\Model\LibraryViewModel.cs" />
+    <Compile Include="ViewModels\Model\BrowseViewModel.cs" />
     <Compile Include="ViewModels\Model\MainViewModel.cs" />
+    <Compile Include="ViewModels\View\AboutView.xaml.cs">
+      <DependentUpon>AboutView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\View\OptionsView.xaml.cs">
+      <DependentUpon>OptionsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\View\BrowseView.xaml.cs">
+      <DependentUpon>BrowseView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\View\LibraryView.xaml.cs">
       <DependentUpon>LibraryView.xaml</DependentUpon>
     </Compile>
@@ -101,8 +116,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Core\AuthorItem.cs" />
-    <Compile Include="Core\ModItem.cs" />
+    <Compile Include="Core\Mods\AuthorData.cs" />
+    <Compile Include="Core\Mods\ModData.cs" />
     <Compile Include="Core\ObservableObject.cs" />
     <Compile Include="Core\RelayCommand.cs" />
     <Compile Include="MainWindow.xaml.cs">
@@ -120,6 +135,18 @@
     <Page Include="Themes\NavButtonTheme.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewModels\View\AboutView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ViewModels\View\OptionsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ViewModels\View\BrowseView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="ViewModels\View\LibraryView.xaml">
       <SubType>Designer</SubType>
@@ -146,7 +173,8 @@
     </EmbeddedResource>
     <Resource Include="Assets\Fonts\BebasNeue-Regular.ttf" />
     <None Include="Assets\ModTags.json" />
-    <None Include="Cache\Pins.json" />
+    <None Include="Cache\PinInfo.json" />
+    <None Include="Cache\ModInfo.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -159,6 +187,7 @@
   <ItemGroup>
     <Folder Include="Cache\Mods\" />
     <Folder Include="Cache\Pinned\" />
+    <Folder Include="temp\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\Images\Chorby.png" />
@@ -175,11 +204,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\Images\start.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Cache\Temp\mod.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets" Condition="Exists('..\packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets')" />

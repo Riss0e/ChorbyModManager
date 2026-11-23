@@ -1,7 +1,4 @@
 ﻿using ChorbyModManager.Core;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Input;
 
 namespace ChorbyModManager.Views.Model
 {
@@ -13,6 +10,9 @@ namespace ChorbyModManager.Views.Model
         public RelayCommand GoToAbout { get; set; }
 
         public LibraryViewModel libraryVM;
+        public BrowseViewModel browseVM;
+        public OptionsViewModel optionsVM;
+        public AboutViewModel aboutVM;
 
         private object _currentView;
 
@@ -30,9 +30,16 @@ namespace ChorbyModManager.Views.Model
         public MainViewModel()
         {
             libraryVM = new LibraryViewModel();
-            CurrentView = libraryVM;
+            browseVM = new BrowseViewModel();
+            optionsVM = new OptionsViewModel();
+            aboutVM = new AboutViewModel();
 
             GoToLibrary = new RelayCommand(o => { CurrentView = libraryVM; });
+            GoToBrowse = new RelayCommand(o => { CurrentView = browseVM; });
+            GoToOptions = new RelayCommand(o => { CurrentView = optionsVM; });
+            GoToAbout = new RelayCommand(o => { CurrentView = aboutVM; });
+
+            CurrentView = libraryVM;
         }
     }
 }
